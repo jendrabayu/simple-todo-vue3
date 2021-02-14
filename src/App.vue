@@ -71,6 +71,9 @@ export default {
       filter: "all",
     };
   },
+  created() {
+    document.title = "Simple Todo";
+  },
   methods: {
     addTodo() {
       if (this.newTodo.trim("").length === 0) {
